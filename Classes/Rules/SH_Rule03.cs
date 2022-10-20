@@ -11,7 +11,7 @@ namespace SimpleShapeGrammar.Classes
         // --- properties ---
         public double HorizontalThrustParameter { get; set; }
         public bool Compression { get; set; }
-        private double[] bounds = {0.1, 0.9};
+        private readonly double[] bounds = {0.1, 0.9};
         //public State RuleState = State.gamma;
 
         // --- constructors ---

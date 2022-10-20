@@ -9,8 +9,8 @@ namespace SimpleShapeGrammar.Classes
 {
     public class SH_XReal : XReal
     {
-        private SH_Solution SH_solution;
-        private SolutionType type;
+        private readonly SH_Solution SH_solution;
+        private readonly SolutionType type;
 
         public SH_XReal()
         {
@@ -68,7 +68,7 @@ namespace SimpleShapeGrammar.Classes
         public void SetRuleList(List<SH_Rule> ruleList)
         {
             Type type = this.type.GetType();
-            List<SH_Rule> results;
+            // List<SH_Rule> results;
 
             if (type == typeof(SH_SolutionType))
             {
