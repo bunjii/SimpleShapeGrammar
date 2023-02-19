@@ -5,7 +5,6 @@ using Rhino.Geometry;
 using Grasshopper.Kernel;
 using SimpleShapeGrammar.Classes.Elements;
 
-using Accord.Math;
 
 
 namespace SimpleShapeGrammar.Classes
@@ -94,7 +93,7 @@ namespace SimpleShapeGrammar.Classes
         public static double[] CalculateMoments(double[,] a, double[] b)
         {
 
-            double[] moments = a.Solve(b);
+            double[] moments = new double[0]; // //  a.Solve(b);
             return moments;
         }
         public static double[] CalculateForces(SH_SimpleShape _ss, double[] moments)
@@ -310,7 +309,7 @@ namespace SimpleShapeGrammar.Classes
             if(els.Count == 1)
             {
                 var el = els[0];
-                int new_ind = el.Nodes.First(n => n.ID != node.ID);
+                int new_ind = 0; // el.Nodes.First(n => n.ID != node.ID);
                 new_node = el.Nodes[new_ind];
                 nodes.Add(new_node);
                 sort_ind.Add(ss.Nodes.IndexOf(new_node));
@@ -323,7 +322,7 @@ namespace SimpleShapeGrammar.Classes
                 {
                     if (nodes.Contains(el.Nodes[0]) && nodes.Contains(el.Nodes[1])) continue;       // if both nodes are already sorted, we are not interested in this element
 
-                    int new_ind = el.Nodes.First(n => n.ID != node.ID);
+                    int new_ind = 0; // el.Nodes.First(n => n.ID != node.ID);
                     new_node = el.Nodes[new_ind];
                     nodes.Add(new_node);
                     sort_ind.Add(ss.Nodes.IndexOf(new_node));

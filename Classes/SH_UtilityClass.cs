@@ -8,12 +8,12 @@ using Grasshopper.Kernel;
 using Rhino.Geometry;
 using SimpleShapeGrammar.Classes.Elements;
 
+
 using Karamba.Models;
 using Karamba.Utilities;
 using Karamba.Elements;
 using Karamba.Geometry;
-using Karamba.GHopper.Geometry;
-using Karamba.CrossSections;
+using Karamba.CrossSections; 
 using Karamba.Supports;
 using Karamba.Loads;
 

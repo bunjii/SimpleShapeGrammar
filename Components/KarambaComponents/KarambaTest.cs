@@ -3,8 +3,10 @@ using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 
+using KarambaCommon;
 using Karamba.GHopper.Models;
 using Karamba.Models;
+using Karamba.GHopper;
 using Karamba.Utilities;
 using Karamba.Geometry;
 using Karamba.CrossSections;
@@ -103,11 +105,12 @@ namespace SimpleShapeGrammar.Components
             List<double> out_g;
             List<double> out_comp;
             string message;
-            model = k3d.Algorithms.AnalyzeThI(model, out max_disp, out out_g, out out_comp, out message);
-            var out_model = new Karamba.GHopper.Models.GH_Model(model);
+            model = k3d.Algorithms.AnalyzeThI(model, out max_disp, out out_g, out out_comp, out message); 
+
+            // var out_model = new GH_Model(model);
             // --- output ---
             //DA.SetData(0, max_disp[0]);
-            DA.SetData(0, out_model);
+            // DA.SetData(0, out_model);
         }
 
         /// <summary>

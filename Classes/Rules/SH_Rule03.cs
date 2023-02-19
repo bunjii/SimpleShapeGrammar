@@ -45,8 +45,6 @@ namespace SimpleShapeGrammar.Classes
             // --- solve ---
             SH_Evaluation.ConstructMatrices(_ss, out double[,] a, out double[] b);
 
-            
-
             // calculate moments over the supports
             double[] moments = SH_Evaluation.CalculateMoments(a, b);
             double[] forces = SH_Evaluation.CalculateForces(_ss, moments);

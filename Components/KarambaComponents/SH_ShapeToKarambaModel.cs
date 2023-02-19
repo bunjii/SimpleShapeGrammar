@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
-using Karamba.GHopper.Models;
+//using Karamba.GHopper.Models;
 using Karamba.Models;
 using Karamba.Utilities;
 using Karamba.Elements;
@@ -85,7 +85,6 @@ namespace SimpleShapeGrammar.Components
                 // karamba point
                 Point3 loc = new Point3(sup.Position.X, sup.Position.Y, sup.Position.Z);
                 
-
                 // conditions
                 List<bool> conditions = CreateBooleanConditions(sup.SupportCondition);
 
@@ -143,10 +142,10 @@ namespace SimpleShapeGrammar.Components
 
 
             // create GH_Model wrapper to enable pipelining of the model
-            var out_model = new Karamba.GHopper.Models.GH_Model(model);
+            // var out_model = new Karamba.GHopper.Models.GH_Model((model);
 
             // --- output ---
-            DA.SetData(0, out_model);
+            // DA.SetData(0, out_model);
         }
 
         /// <summary>
