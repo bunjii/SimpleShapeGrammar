@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SimpleShapeGrammar.Classes
 {
     [Serializable]
-    public abstract class SH_Rule : ISH_Rule
+    public abstract class SH_Rule // : ISH_Rule
     {
         public State RuleState;
         public string Name;
