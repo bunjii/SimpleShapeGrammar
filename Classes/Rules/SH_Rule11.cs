@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleShapeGrammar.Classes.Rules
+namespace SimpleShapeGrammar.Classes
 {
-    class SH_Rule11
+    public class SH_Rule11 : SH_Rule
     {
+        // --- properties ---
+
+        // --- constructors ---
+
+
+        // --- methods ---
     }
+
 }
