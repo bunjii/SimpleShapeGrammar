@@ -69,7 +69,7 @@ namespace SimpleShapeGrammar.Components.MOOComponents
 
 
             double? outputData = null;
-            double testOut = 0.0;
+            // double testOut = 0.0;
             var runBool = this.Params.Input[0].Sources[0] as GH_BooleanToggle;
             if (runBool == null)
             {

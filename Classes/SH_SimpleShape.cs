@@ -96,17 +96,19 @@ namespace SimpleShapeGrammar.Classes
 
         public SH_SimpleShape DeepCopy()
         {
-            SH_SimpleShape simpleShapeCopy = new SH_SimpleShape();
-            simpleShapeCopy.nodeCount = this.nodeCount;
-            simpleShapeCopy.elementCount = this.elementCount;
-            simpleShapeCopy.supCount = this.supCount;
+            SH_SimpleShape simpleShapeCopy = new SH_SimpleShape
+            {
+                nodeCount = this.nodeCount,
+                elementCount = this.elementCount,
+                supCount = this.supCount,
 
-            simpleShapeCopy.Elements = this.Elements;
-            simpleShapeCopy.Nodes = this.Nodes;
-            simpleShapeCopy.Supports = this.Supports;
-            simpleShapeCopy.LineLoads = this.LineLoads;
-            simpleShapeCopy.PointLoads = this.PointLoads;
-            simpleShapeCopy.SimpleShapeState = this.SimpleShapeState;
+                Elements = this.Elements,
+                Nodes = this.Nodes,
+                Supports = this.Supports,
+                LineLoads = this.LineLoads,
+                PointLoads = this.PointLoads,
+                SimpleShapeState = this.SimpleShapeState
+            };
 
             return simpleShapeCopy;
         }
